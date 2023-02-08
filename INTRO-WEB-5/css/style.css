@@ -30,9 +30,14 @@ h1 span {
 
 }
 
+/*La propiedad CSS margin establece el margen para los cuatro lados. 
+ Es una abreviación para evitar tener que
+ establecer cada lado por separado con las otras propiedades de margen*/
+
+ /* HEADER */
 .container{
     max-width: 800px;
-    background-color: #3f43aa;
+    background-color: #ffffff;
     margin-top: 80px;
     margin-left:auto ;
     margin-right: auto;
@@ -52,14 +57,160 @@ h1 span {
     position: relative;
 
 }
+
+/*La propiedad CSS text-decoration se usa para establecer el }
+formato de texto a subrayado (underline) y suprarrayado (overline),
+} tachado (line-through) o parpadeo (blink). El subrayado y el 
+suprarrayado son posicionados bajo el texto,
+ mientras la línea a través de éste se posiciona por encima.*/
 .menu ul li a{
     background: #363636;
     color: white;
     font-size: 10px;
     text-decoration: none;
     display: block;
-    padding: 3px;
+    padding: 5px; /*La propiedad abreviada de CSS padding establece el área de relleno en los cuatro lados de un elemento a la vez.*/
 
 }
 
+/*La propiedad position de CSS especifica cómo un elemento es 
+posicionado en el documento. Las propiedades top, right, bottom, y 
+left determinan la ubicación final de los elementos posicionados.*/
+.menu ul li ul{
+    position: absolute;
+    top: 25px;
+    left: 0;
+    list-style-type: none;
+    display: none;
+    height:auto;
+}
 
+/*La propiedad CSS display especifica si un elemento es tratado 
+como block or inline element y el diseño usado por sus hijos,
+ como flow layout(Diseño de Flujo), grid(Cuadricula) o flex(Flexible).*/
+.menu ul li:hover ul{
+    display: block;
+}
+
+.menu ul li ul li{
+    display: block;
+    width: 70px;
+    height: 20px;
+    margin: 0;
+    text-align: left;
+}
+
+
+/*FIN DE CSS HEADER*/
+
+h2{
+    color: #f0563d;
+    text-transform: uppercase;
+
+}
+
+h3::before{
+    content: "//";
+
+}
+
+.clearfix{
+    *zoom: 1;
+}
+
+
+.clearfix:before{
+    display: table;
+    line-height: "1";
+    content: "";
+}
+/* .clearfix::before, .clearfix::after{
+    display: table;
+    line-height: 1;
+    content: "";
+} */
+
+
+
+
+
+
+.pull-left{
+    float: left;
+}
+
+.row{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.col-60{
+    width: 60%;
+
+
+}
+
+.col-90{
+    width: 90%;
+}
+
+.col-10{
+    width: 5%;
+}
+
+.education ul{
+    list-style: none;
+    margin:0;
+    padding: 0; 
+}
+    .education .year {
+        font-size: 1.1em;
+        font-weight: bold;
+    }
+    
+    .education .description {
+        background: #EEEEEE;
+        border-bottom: 1px solid #DDDDDD;
+        padding: 10px;
+        margin-bottom: 10px;
+        position: relative;
+        box-sizing: border-box; 
+    }
+
+    .education .description h3,
+     .education .description p{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .education .description p::after {
+        content: "";
+        position: absolute;
+        border: 8px solid transparent ;
+        border-right: 8px solid #EEEEEE ;
+        top: 5px;
+        left: -16px;
+    }
+    .parrafo{
+        display: flex;
+    }
+
+    .experience .job .where{
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+
+    .year{
+        font-size: 0.8em;
+    }
+
+    .profesion{
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 3em;
+        font-size: 0.8em;
+        text-align: justify;
+    }
+
+    .description{
+        margin-top: 0;
+        margin-left: 3em;
+    }
