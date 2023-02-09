@@ -1,166 +1,150 @@
 body{
-    font-family: 'Open sans', Arial, Tahoma;
-
+    font-family: 'Open sans', Arial, Tahoma; /*CSS property specifies a prioritized list of one or more font family names and/or generic family names for the selected element. */
     font-weight: 400;
     font-size: 14px;
     color: #363636;
     background: #ededed;
 }
-/*HEADER*/
+
+
+/* HEADER*/
 h1{
     text-transform: uppercase;
+
 }
-h1 span {
+
+h1 span{
     color: #f0563d;
 }
 
-#photo-header {
+#photo-header{
     text-align: center;
-    border-bottom-color: #f0563d;
+    border-bottom-color: #8d8d8d;
     border-bottom-width: 5px;
     border-bottom-style: double;
 }
 
-
 #photo img{
     background-color: #3f43aa;
-    border-radius: 50%;
     width: 120px;
     height: 120px;
-
+    border-radius: 50%;
 }
 
-/*La propiedad CSS margin establece el margen para los cuatro lados. 
- Es una abreviación para evitar tener que
- establecer cada lado por separado con las otras propiedades de margen*/
-
- /* HEADER */
 .container{
-    max-width: 800px;
-    background-color: #ffffff;
+    max-width: 900px;
+    background: #ffffff;
     margin-top: 80px;
-    margin-left:auto ;
+    margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
-    
 }
 
 .menu ul{
     text-align: center;
     margin: auto;
     padding: 0%;
-    list-style-type: none;
+    list-style-type:none;
 }
-
 .menu ul li{
     display: inline-block;
     position: relative;
-
 }
-
-/*La propiedad CSS text-decoration se usa para establecer el }
-formato de texto a subrayado (underline) y suprarrayado (overline),
-} tachado (line-through) o parpadeo (blink). El subrayado y el 
-suprarrayado son posicionados bajo el texto,
- mientras la línea a través de éste se posiciona por encima.*/
-.menu ul li a{
+.menu ul li a {
     background: #363636;
-    color: white;
+    color: #ffffff;
     font-size: 10px;
     text-decoration: none;
     display: block;
-    padding: 5px; /*La propiedad abreviada de CSS padding establece el área de relleno en los cuatro lados de un elemento a la vez.*/
-
+    padding: 5px;
 }
 
-/*La propiedad position de CSS especifica cómo un elemento es 
-posicionado en el documento. Las propiedades top, right, bottom, y 
-left determinan la ubicación final de los elementos posicionados.*/
-.menu ul li ul{
-    position: absolute;
+/* La propiedad position de CSS especifica cómo un elemento es 
+posicionado en el documento. Las propiedades top, right, bottom, 
+y left determinan la ubicación final de los elementos posicionados. */
+
+
+.menu ul li ul{   
+    position:absolute;
     top: 25px;
     left: 0;
     list-style-type: none;
     display: none;
-    height:auto;
+    height: auto;
 }
 
-/*La propiedad CSS display especifica si un elemento es tratado 
-como block or inline element y el diseño usado por sus hijos,
- como flow layout(Diseño de Flujo), grid(Cuadricula) o flex(Flexible).*/
 .menu ul li:hover ul{
     display: block;
 }
-
 .menu ul li ul li{
     display: block;
-    width: 70px;
+    width: 60px;
     height: 20px;
     margin: 0;
     text-align: left;
+    font-size: 14px;
 }
 
-
-/*FIN DE CSS HEADER*/
-
-h2{
-    color: #f0563d;
+/* fin de header */
+h2 {
+    color:#f0563d;
     text-transform: uppercase;
-
 }
-
-h3::before{
+ h2::before{
     content: "//";
+ }
 
-}
-
-.clearfix{
-    *zoom: 1;
-}
-
-
-.clearfix:before{
-    display: table;
-    line-height: "1";
-    content: "";
-}
-/* .clearfix::before, .clearfix::after{
+  .clearfix:before{
     display: table;
     line-height: 1;
     content: "";
-} */
+ } 
 
 
 
 
 
 
-.pull-left{
-    float: left;
-}
 
-.row{
+ .pull-left{
+    float:left
+ }
+
+ .row{
     padding-left: 10px;
     padding-right: 10px;
-}
+ }
 .col-60{
     width: 60%;
+}
 
+.col-10{
+    width: 10%;
+}
+.col-20{
+    width: 20%;
+}
 
+.col-40{
+    width: 40%;
+}
+
+.col-80{
+    width: 80;
 }
 
 .col-90{
     width: 90%;
 }
 
-.col-10{
-    width: 5%;
-}
+
+
+/***************/
 
 .education ul{
     list-style: none;
     margin:0;
-    padding: 0; 
+    padding: 0;	
 }
     .education .year {
         font-size: 1.1em;
@@ -176,8 +160,7 @@ h3::before{
         box-sizing: border-box; 
     }
 
-    .education .description h3,
-     .education .description p{
+    .education .description h3, .education .description p{
         margin-top: 0;
         margin-bottom: 0;
     }
@@ -189,9 +172,7 @@ h3::before{
         top: 5px;
         left: -16px;
     }
-    .parrafo{
-        display: flex;
-    }
+
 
     .experience .job .where{
         font-size: 1.2em;
@@ -199,18 +180,123 @@ h3::before{
     }
 
     .year{
-        font-size: 0.8em;
+        font-size: 0.8em ;
     }
 
     .profesion{
         margin-top: 0;
         margin-bottom: 0;
-        margin-left: 3em;
-        font-size: 0.8em;
-        text-align: justify;
+        margin-left: 2em;
+        font-size: 0.9em;
+        text-align:justify;
     }
-
     .description{
         margin-top: 0;
-        margin-left: 3em;
+        margin-left: 2em;
+        text-align: justify;
+
     }
+
+    /* .skills {
+		list-style-type: none;
+		margin:0;
+		padding: 0;
+	}
+		.skills-item {				
+			color: #FFFFFF;
+			font-weight: bold;
+			text-transform: uppercase;
+			padding: 2px 0 2px 5px;
+			margin-top: 5px;				
+			background: #F0563D;
+			
+		}
+		.skills-item[data-percent="10"] { width: 10% }
+		.skills-item[data-percent="20"] { width: 20% }
+		.skills-item[data-percent="30"] { width: 30% }
+		.skills-item[data-percent="40"] { width: 40% }
+		.skills-item[data-percent="50"] { width: 50% }
+		.skills-item[data-percent="60"] { width: 60% }
+		.skills-item[data-percent="70"] { width: 70% }
+		.skills-item[data-percent="80"] { width: 80% }
+		.skills-item[data-percent="90"] { width: 90% } */
+
+               
+          
+     .html { 
+        color: #DDDDDD;
+        margin: 3px;
+        list-style-type: none; 
+        text-align: right; 
+        width: 90%; 
+        background-color: #04AA6D;}
+.css { color: #DDDDDD;
+    margin: 3px;
+    list-style-type: none; 
+    text-align: right;
+    width: 80%; 
+    background-color: #2196F3;
+}
+.js { 
+    color: #DDDDDD;
+    margin: 3px;
+    list-style-type:none; 
+    text-align: right;
+    none;width: 65%; 
+    background-color: #f44336;
+}
+.python { 
+    color: #DDDDDD;
+    margin: 3px;
+    list-style-type: none;
+    text-align: right; 
+    width: 60%; 
+    background-color: #808080;
+}
+
+
+/* fin de skills */
+
+.icon-star{
+    background: url(../img/star-grey.png) no-repeat;
+    width: 112px;
+    height: 14px;
+    float: right;
+
+}
+
+.icon-star-red{
+    background: url(../img/star-red.png) no-repeat;
+    width: 112px;
+    height: 14px;
+    float: left;
+}
+
+.obj-star{
+    
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    border-bottom: 5px;
+}
+
+
+/* Fin idiomas */
+
+
+.hobbie{
+    background: #477df1;
+    color: #DDDDDD;
+    padding: 8px;
+    font-size: 1.5em;
+    
+    
+
+}
+
+footer p{ 
+    text-align: right;
+    font-size: 0.8em;
+    border-top: 1px solid #DDDDDD;
+    
+
+}
