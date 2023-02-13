@@ -1,3 +1,4 @@
+//sesion con fer js01 es lo que hicimos en equipo
 var nombre = "Uriel";
 var edad = "25";
 var tengoMascotas = true;
