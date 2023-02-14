@@ -1,9 +1,26 @@
 let lista = [12,15,80,34,7];
 
+
+let lNueva = ista.map(
+    function(valor){
+        return valor * 2;
+    }
+);
+
+console.log(lNueva);
+
+
+
 let listaNueva = lista.slice(1,3);//metodo que imprime una copia de una porcion del array
 console.log(listaNueva);
 
-lista.sort()
+lista.sort(
+    function(valor1,valor2){
+        return valor1 - valor2;
+    }
+)
+
+console.log(lista)
 
 
 lista.sort();
