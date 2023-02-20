@@ -87,3 +87,38 @@ var resultado = document.getElementById("resultado");
 
 resultado.innerHTML = "Saludos cambió esto";
 
+
+/* 
+
+
+*/
+function cambiarColor(color){
+
+
+}
+
+function suma(){
+    let valor1 =parseInt(input1.value);
+    let valor2 = parseInt(input2.value); 
+    
+    let suma = valor1 +valor2;
+    resultado.innerHTML = suma;
+
+}
+function resta(){
+    let valor1 =parseInt(input1.value);
+    let valor2 = parseInt(input2.value); 
+    
+    let resta = valor1 - valor2;
+    resultado.innerHTML = resta;
+
+}
+function multiplicacion(){
+
+}
+function division(){
+
+}
+
+
+btnSuma.addEventListener("click",suma);
