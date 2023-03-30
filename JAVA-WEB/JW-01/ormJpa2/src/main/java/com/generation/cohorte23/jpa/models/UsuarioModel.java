@@ -1,6 +1,3 @@
-/*Creamos una clase pojo dentro del modelo para 
- * mapear una tabla en la base de datos */
-
 package com.generation.cohorte23.jpa.models;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
