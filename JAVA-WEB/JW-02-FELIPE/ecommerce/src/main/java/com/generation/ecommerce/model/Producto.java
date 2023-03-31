@@ -32,7 +32,7 @@ public class Producto {
 		this.id = id;
 		this.nombre = nombre;
 		this.descripcion = descripcion;
-		URL_Imagen = uRL_Imagen;
+		this.URL_Imagen = uRL_Imagen;
 		this.precio = precio;
 	}
 	

@@ -14,4 +14,9 @@ public interface ProductoRepository extends JpaRepository<Producto, Long>{
 	
 	//Metodo que realiza la consulta personalizadda definida anteriormente. Rerorna un Optional que puede contener...
 	Optional<Producto> findByNombre(String Nombre);
+	
+	
+	
+	
+	
 }
